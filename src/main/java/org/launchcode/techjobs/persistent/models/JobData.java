@@ -36,7 +36,7 @@ public class JobData {
         for (Job job : allJobs) {
 
             String aValue = getFieldValue(job, column);
-
+            System.out.println(column);
             if (aValue != null && aValue.toLowerCase().contains(value.toLowerCase())) {
                 results.add(job);
             }
